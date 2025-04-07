@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Resumo da Compra</h1>
+    <p id="produto-nome"></p>
+    <button onclick="finalizarCompra()">Finalizar Pagamento</button>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const produto = params.get("produto");
+
+        if (produto) {
+            document.getElementById("produto-nome").textContent = `Produto: ${produto}`;
+        }
+
+        function finalizarCompra() {
+            alert("Redirecionando para pagamento...");
+            window.location.href = "https://pagamento-exemplo.com";
+        }
+    </script>
+</body>
+</html>
