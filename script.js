@@ -1,20 +1,22 @@
-// script.js (versão correta)
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("LARANJODINA STORE script.js carregado!");
 
-    console.log("LARANJODINA STORE script.js carregado com sucesso!");
+  const setupProductLinks = () => {
+    const productCards = document.querySelectorAll("a.product-card");
 
-    const setupProductLinks = () => {
-        const productCards = document.querySelectorAll('a.product-card');
+    productCards.forEach((card) => {
+      const productNameElement = card.querySelector("h3");
+      if (productNameElement) {
+        const productName = productNameElement.textContent;
 
-        productCards.forEach(card => {
-            const productNameElement = card.querySelector('h3');
-            if (productNameElement) {
-                const productName = productNameElement.textContent;
-                const checkoutUrl = `checkout.html?produto=${encodeURIComponent(productName)}`;
-                card.setAttribute('href', checkoutUrl);
-            }
-        });
-    };
+        const detailUrl = `detalhes-produto.html?produto=${encodeURIComponent(
+          productName
+        )}`;
 
-    setupProductLinks();
+        card.setAttribute("href", detailUrl);
+      }
+    });
+  };
+
+  setupProductLinks();
 });

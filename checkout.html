@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout - LARANJODINA STORE</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -35,18 +32,17 @@
             <div class="checkout-wrapper">
                 <h1>Finalizar Compra</h1>
                 <div class="checkout-layout">
-                    
                     <section class="checkout-form">
-                        <form id="payment-form">
+                        <form id="payment-form" action="https://formspree.io/f/xxxxxxxx" method="POST">
                             <fieldset>
                                 <legend>Dados Pessoais</legend>
                                 <div class="form-group">
                                     <label for="name">Nome Completo</label>
-                                    <input type="text" id="name" name="name" required>
+                                    <input type="text" id="name" name="Nome do Cliente" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">E-mail</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="Email do Cliente" required />
                                 </div>
                             </fieldset>
 
@@ -54,28 +50,28 @@
                                 <legend>Endereço de Entrega</legend>
                                 <div class="form-group">
                                     <label for="cep">CEP</label>
-                                    <input type="text" id="cep" name="cep" required>
+                                    <input type="text" id="cep" name="CEP" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="address">Rua e Número</label>
-                                    <input type="text" id="address" name="address" required>
+                                    <input type="text" id="address" name="Endereço" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="city">Cidade</label>
-                                    <input type="text" id="city" name="city" required>
+                                    <input type="text" id="city" name="Cidade" required />
                                 </div>
-                                 <div class="form-group">
+                                <div class="form-group">
                                     <label for="state">Estado</label>
-                                    <input type="text" id="state" name="state" required>
+                                    <input type="text" id="state" name="Estado" required />
                                 </div>
                             </fieldset>
-                            
-                             <fieldset>
-                                <legend>Forma de Pagamento</legend>
-                                <p>Opção demonstrativa. Você será redirecionado.</p>
-                                </fieldset>
 
-                            <button type="submit" class="cta-button">Finalizar Pagamento</button>
+                            <input type="hidden" name="Produto Comprado" id="hidden-product-name">
+                            <input type="hidden" name="Valor Total" id="hidden-total-price" value="R$ 99,99">
+
+                            <button type="submit" class="cta-button">
+                                Finalizar Pagamento
+                            </button>
                         </form>
                     </section>
 
@@ -86,7 +82,9 @@
                         <div class="summary-total">
                             <p><span>Subtotal:</span> <span>R$ 89,99</span></p>
                             <p><span>Frete:</span> <span>R$ 10,00</span></p>
-                            <p class="total"><strong>Total:</strong> <strong>R$ 99,99</strong></p>
+                            <p class="total">
+                                <strong>Total:</strong> <strong>R$ 99,99</strong>
+                            </p>
                         </div>
                     </aside>
                 </div>
@@ -99,7 +97,6 @@
             <p>&copy; 2025 LARANJODINA STORE. Todos os direitos reservados.</p>
         </div>
     </footer>
-
     <script src="checkout.js"></script>
 </body>
 </html>

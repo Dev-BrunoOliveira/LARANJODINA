@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Produto - LARANJODINA STORE</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/LOGOSITE.png" alt="Logo LARANJODINA STORE" />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="product-detail-layout">
+                    
+                    <div class="product-image-gallery">
+                        <img src="./img/placeholder.png" alt="Imagem principal do produto">
+                    </div>
+
+                    <div class="product-details-content">
+                        <h1 id="product-name">Nome do Produto</h1>
+                        <p class="price" id="product-price">R$ 0,00</p>
+                        
+                        <h3>Descrição</h3>
+                        <p id="product-description">
+                            Carregando descrição do produto...
+                        </p>
+
+                        <div class="form-group">
+                            <label for="size">Tamanho:</label>
+                            <select name="size" id="size">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                        </div>
+                        
+                        <a href="checkout.html" id="buy-now-button" class="cta-button">Comprar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 LARANJODINA STORE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="detalhes.js"></script>
+</body>
+</html>

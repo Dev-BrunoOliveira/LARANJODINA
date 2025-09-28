@@ -1,8 +1,11 @@
+// checkout.js (Versão final para Formspree)
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const produtoNome = params.get("produto");
 
   const summaryItemsContainer = document.getElementById("summary-items");
+
+  const hiddenProductInput = document.getElementById("hidden-product-name");
 
   if (produtoNome) {
     const productElement = document.createElement("div");
@@ -14,19 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span>R$ 89,99</span>
             </div>
         `;
-
     summaryItemsContainer.appendChild(productElement);
+
+    if (hiddenProductInput) {
+      hiddenProductInput.value = produtoNome;
+    }
   } else {
     summaryItemsContainer.innerHTML = "<p>Nenhum produto no carrinho.</p>";
   }
-
-  const paymentForm = document.getElementById("payment-form");
-
-  paymentForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    alert("Obrigado pela sua compra! Redirecionando para pagamento...");
-
-    window.location.href = "https://pagamento-exemplo.com";
-  });
 });
