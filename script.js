@@ -1,29 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Página carregada com sucesso!");
-  
-   
-    const navLinks = document.querySelectorAll(".nav-list a");
-  
-    navLinks.forEach((link) => {
-      link.addEventListener("mouseover", () => {
-        link.style.color = "#f39c12"; 
-      });
-  
-      link.addEventListener("mouseout", () => {
-        link.style.color = "#fff"; 
-      });
-    });
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const botoesCompra = document.querySelectorAll(".comprar");
-  
-    botoesCompra.forEach((botao) => {
-      botao.addEventListener("click", function () {
-        const produto = this.getAttribute("data-produto");
-      
-        window.location.href = `checkout.html?produto=${encodeURIComponent(produto)}`;
-      });
-    });
-  });
-  
+// script.js (versão correta)
+document.addEventListener('DOMContentLoaded', () => {
+
+    console.log("LARANJODINA STORE script.js carregado com sucesso!");
+
+    const setupProductLinks = () => {
+        const productCards = document.querySelectorAll('a.product-card');
+
+        productCards.forEach(card => {
+            const productNameElement = card.querySelector('h3');
+            if (productNameElement) {
+                const productName = productNameElement.textContent;
+                const checkoutUrl = `checkout.html?produto=${encodeURIComponent(productName)}`;
+                card.setAttribute('href', checkoutUrl);
+            }
+        });
+    };
+
+    setupProductLinks();
+});

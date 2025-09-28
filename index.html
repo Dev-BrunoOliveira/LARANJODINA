@@ -3,40 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LARANJODINA STORE</title>
+    <title>LARANJODINA STORE - Estilo que Fala por Você</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./img/LOGOSITE.png" alt="Logo da Loja de Camisetas" />
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/LOGOSITE.jpg" alt="LARANJODINA STORE" />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+        </nav>
       </div>
-
-      <nav>
-        <ul class="nav-list">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <button class="comprar" data-produto="Camiseta Preta">Comprar</button>
-    <button class="comprar" data-produto="Camiseta Branca">Comprar</button>
-
     <main>
-      <section class="muro-image">
-        <img src="./img/Muro.png" alt="Imagem Muro" />
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>A vitamina C que te falta!</h1>
+          <p>Camisetas únicas com estampas que marcam presença.</p>
+          <a href="produtos.html" class="cta-button">Ver Coleção Completa</a>
+        </div>
+      </section>
+
+      <section class="featured-products">
+        <div class="container">
+          <h2>Destaques da Semana 🔥</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <a href="#">
+                <figure class="product-image">
+                  <img
+                    src="./img/TYLER PEITA.jpg"
+                    alt="Camiseta estampada do Tyler The Creator"
+                  />
+                </figure>
+                <div class="product-info">
+                  <h3>Camiseta Tyler The Creator</h3>
+                  <p class="price">R$ 89,99</p>
+                  <span class="buy-button">Ver detalhes</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="product-card">
+              <a href="#">
+                <figure class="product-image">
+                  <img
+                    src="./img/SENNA PEITA.jpg"
+                    alt="Camiseta estampada do Ayrton Senna"
+                  />
+                </figure>
+                <div class="product-info">
+                  <h3>Camiseta Senna</h3>
+                  <p class="price">R$ 89,99</p>
+                  <span class="buy-button">Ver detalhes</span>
+                </div>
+              </a>
+            </article>
+
+            <article class="product-card">
+              <a href="#">
+                <figure class="product-image">
+                  <img
+                    src="./img/AGOSTINHO PEITA.jpg"
+                    alt="Camiseta estampada do Agostinho Carrara"
+                  />
+                </figure>
+                <div class="product-info">
+                  <h3>Camiseta Agostinho</h3>
+                  <p class="price">R$ 89,99</p>
+                  <span class="buy-button">Ver detalhes</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 LARANJODINA STORE. Todos os direitos reservados.</p>
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 LARANJODINA STORE. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
-  <script src="./script.js"></script>
 </html>
