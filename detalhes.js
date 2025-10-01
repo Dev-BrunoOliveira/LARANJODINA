@@ -3,23 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
     "Camiseta 2Pac": {
       name: "Camiseta 2Pac",
       price: "R$ 89,99",
-      image: "./img/2PAC PEITA.png",
-      description:
-        "Camiseta em malha 100% algodão com estampa de alta qualidade do lendário rapper Tupac Shakur. Perfeita para fãs de hip-hop e estilo dos anos 90.",
+      image: "./img/2PAC PEITA.jpg",
+      description: "Descrição da camiseta do 2Pac.",
     },
-    "Camiseta Senna": {
-      name: "Camiseta Senna",
+    "Camiseta Kendrick": {
+      name: "Camiseta Kendrick",
       price: "R$ 89,99",
-      image: "./img/SENNA PEITA.png",
-      description:
-        "Homenageie o ídolo nacional Ayrton Senna com esta camiseta exclusiva. Feita em algodão premium, é ideal para os apaixonados por automobilismo e pela história do Brasil.",
+      image: "./img/KENDRICK PEITA.jpg",
+      description: "Descrição da camiseta do Kendrick.",
     },
-    "Camiseta Tyler The Creator": {
-      name: "Camiseta Tyler The Creator",
+    "Camiseta Kendrick": {
+      name: "Camiseta Kendrick",
       price: "R$ 89,99",
-      image: "./img/TYLER PEITA.png",
-      description:
-        "Mostre seu estilo único com a estampa inspirada no icônico Tyler, The Creator. Design vibrante em tecido macio e confortável.",
+      image: "./img/KENDRICK SB.jpg",
+      description: "Descrição da camiseta do Kendrick.",
     },
   };
 
