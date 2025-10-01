@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "./img/KENDRICK PEITA.jpg",
       description: "Kendrick Lamar em estilo urbano.",
     },
-    "Camiseta Kendrick": {
-      name: "Camiseta Kendrick",
+    "Camiseta Kendrick SB": {
+      name: "Camiseta Kendrick SB",
       price: "R$ 89,99",
       image: "./img/KENDRICK SB.jpg",
       description: "Kendrick Lamar no Super Bowl.",
