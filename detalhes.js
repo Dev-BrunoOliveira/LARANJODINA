@@ -4,19 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Camiseta 2Pac",
       price: "R$ 89,99",
       image: "./img/2PAC PEITA.jpg",
-      description: "Descrição da camiseta do 2Pac.",
+      description: "Uma peça unica que celebra o legado de 2Pac.",
     },
     "Camiseta Kendrick": {
       name: "Camiseta Kendrick",
       price: "R$ 89,99",
       image: "./img/KENDRICK PEITA.jpg",
-      description: "Descrição da camiseta do Kendrick.",
+      description: "Kendrick Lamar em estilo urbano.",
     },
     "Camiseta Kendrick": {
       name: "Camiseta Kendrick",
       price: "R$ 89,99",
       image: "./img/KENDRICK SB.jpg",
-      description: "Descrição da camiseta do Kendrick.",
+      description: "Kendrick Lamar no Super Bowl.",
     },
   };
 
