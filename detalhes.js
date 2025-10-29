@@ -16,7 +16,7 @@ const products = {
   "camiseta-fresh-prince": {
     name: "Camiseta Fresh Prince",
     price: "R$ 89,99",
-    imageUrl: "./img/WILL SMITH PEITA.jpg",
+    imageUrl: "./img/WILL PEITA.jpg",
     description:
       "Direto de Bel-Air para o seu guarda-roupa. Esta camiseta captura a essência dos anos 90 com a vibe inconfundível de Will Smith. Conforto e nostalgia em uma só peça.",
   },
@@ -48,6 +48,41 @@ const products = {
     description:
       "Inspirada na performance icônica do Super Bowl, esta camiseta celebra um momento histórico da música. Design exclusivo Laranjodina com estampa de alta definição.",
   },
+  "camiseta-senna": {
+    name: "Camiseta Ayrton Senna",
+    price: "R$ 89,99",
+    imageUrl: "./img/SENNA PEITA.jpg",
+    description:
+      "Celebre o legado do ídolo brasileiro Ayrton Senna. Uma camiseta para quem tem velocidade e paixão no coração. Feita em 100% algodão premium.",
+  },
+  "camiseta-agostinho": {
+    name: "Camiseta Agostinho Carrara",
+    price: "R$ 89,99",
+    imageUrl: "./img/AGOSTINHO PEITA.jpg",
+    description:
+      "Mostre seu tino para os negócios com esta estampa do maior empreendedor do Brasil. 'É uma cilada, Bino?' Não, é uma ótima camiseta. 100% algodão.",
+  },
+  "camiseta-travis-scott": {
+    name: "Camiseta Travis Scott",
+    price: "R$ 89,99",
+    imageUrl: "./img/TRAVIS PEITA.jpg",
+    description:
+      "Entre no modo Cactus Jack. Esta camiseta captura a energia e o estilo único de Travis Scott. Perfeita para fãs de Astroworld e da cultura hype. 100% algodão.",
+  },
+  "camiseta-trem-bala": {
+    name: "Camiseta Trem Bala",
+    price: "R$ 89,99",
+    imageUrl: "./img/TREM BALA PEITA.jpg",
+    description:
+      "Uma estampa de alta velocidade inspirada no filme 'Trem-Bala'. Design estiloso e cheio de ação, ideal para fãs de cinema. Tecido confortável para qualquer missão.",
+  },
+  "camiseta-hotd": {
+    name: "Camiseta Breaking Bad",
+    price: "R$ 89,99",
+    imageUrl: "./img/BB.jpg",
+    description:
+      "Mostre sua lealdade à Casa Targaryen. Esta camiseta celebra o fogo e o sangue de 'A Casa do Dragão'. Essencial para qualquer fã de Westeros. Dracarys!",
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -72,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateBuyButtonLink() {
       const selectedSize = sizeSelector.value;
-
       buyButton.href = `checkout.html?id=${productId}&size=${selectedSize}`;
     }
 
